@@ -320,6 +320,18 @@
       color: #fff;
     }
 
+    .highlight-text {
+      color: #ffcf40;
+      text-shadow: 0 0 12px rgba(255, 207, 64, 0.4);
+      animation: pulseHighlight 2s infinite;
+    }
+
+    @keyframes pulseHighlight {
+      0% { text-shadow: 0 0 8px rgba(255, 207, 64, 0.3); }
+      50% { text-shadow: 0 0 16px rgba(255, 207, 64, 0.8); }
+      100% { text-shadow: 0 0 8px rgba(255, 207, 64, 0.3); }
+    }
+
     .official-link:hover,
     .official-link:focus-visible,
     .group-card:hover,
@@ -794,7 +806,7 @@
                 <span class="link-copy">
                   <span class="link-icon">🌐</span>
                   <span>
-                    <strong>Check Your Result Now</strong>
+                    <strong class="highlight-text">Check Your Result Now</strong>
                   </span>
                 </span>
                 <span class="arrow">→</span>
